@@ -1,0 +1,31 @@
+# prueba get
+GET http://localhost:8080/api/usuarios
+
+###
+# prueba get params
+GET http://localhost:8080/api/usuarios?q=1&name=Tim&
+
+###
+# prueba post
+POST http://localhost:8080/api/usuarios
+Content-Type: application/json
+
+{
+    "nombre": "Jhon Doe",
+    "edad": 33
+}
+
+
+###
+# prueba put
+PUT http://localhost:8080/api/usuarios/101
+
+
+###
+# prueba patch
+PATCH http://localhost:8080/api/usuarios
+
+
+###
+# prueba delete
+DELETE http://localhost:8080/api/usuarios
